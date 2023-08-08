@@ -1,0 +1,64 @@
+body {
+    background: slategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    height: 250px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInput {
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin: 2rem auto;
+}
+
+.userInput::placeholder {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.userInput:focus {
+    border: solid 5px #00FFCE;
+    outline: none;
+}
+
+#greetBtn {
+    margin-top: 1rem;
+    padding: 15px;
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(255, 158, 215);
+    border: none;
+    border-radius: 10px;
+}
+
+#greetBtn:hover {
+    cursor: pointer;
+    background-color: rgb(194, 47, 182);
+    color: white;
+    letter-spacing: normal;
+}

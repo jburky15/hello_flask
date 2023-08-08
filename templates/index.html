@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <title>Hello Flask</title>
+    </head>
+    <body>
+        <img src="https://logos.textgiraffe.com/logos/logo-name/Hello!-designstyle-hello-m.png" alt="Hello Logo">
+        <form action="greet" method="POST">
+            {% for message in get_flashed_messages() %}
+                <p>{{ message }}</p>
+            {% endfor %}
+            <input type="text" placeholder="Name" name="name_input" class="userInput">
+            <input type="submit" value="GREET" id="greetBtn">
+        </form>
+    </body>
+</html>
