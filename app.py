@@ -11,7 +11,7 @@ def index():
     flash("Hello, what is your name?")
     return render_template("index.html")
 
-# Re-route the user once the have entered their name and pressed the "Greet" button
+# Re-route the user once they have entered their name and pressed the "Greet" button
 @app.route("/greet", methods=["POST", "GET"])
 def greet():
     flash("Hi " + str(request.form['name_input']) + " great to meet you!")
