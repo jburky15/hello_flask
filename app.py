@@ -4,7 +4,7 @@ app = Flask (__name__)
 
 app.secret_key = "ngeagtahatg3q"
 
-@app.route("/")
+@app.route("/hello")
 
 def index():
     flash("Hello, what is your name?")
